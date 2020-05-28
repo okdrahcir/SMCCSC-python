@@ -1,0 +1,19 @@
+class Solution {
+    public int subtractProductAndSum(int n) {
+        
+		int number = 0;
+		int product = 1;
+		int sum = 0;
+		String num = Integer.toString(n);
+		
+	    for (int i = 0; i < num.length(); i++) {
+
+	    	number = num.charAt(i) - 48;
+	    	product *= number;	
+	    	sum += number;
+	}	
+	    
+    	return product - sum;
+
+}
+}
